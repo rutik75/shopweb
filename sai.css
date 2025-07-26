@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,13 +9,13 @@ body {
 
 h1 {
   color: #0b0501;
-  font-size: 32px;  /* reduced from 60px */
-  margin-top: 5px;  /* reduced from 10px */
+  font-size: 32px;
+  margin-top: 5px;
 }
 
 .box {
-  font-size: 16px;  /* reduced from 24px */
-  margin-top: 5px;  /* reduced from 10px */
+  font-size: 16px;
+  margin-top: 5px;
   color: #0b0501;
 }
 
@@ -25,7 +26,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  padding: 10px;  /* reduced from 20px */
+  padding: 10px;
   text-align: center;
   overflow: hidden;
   z-index: 1;
@@ -51,9 +52,9 @@ nav {
 nav a {
   display: inline-block;
   color: white;
-  padding: 10px 15px;  /* reduced from 15px 25px */
+  padding: 10px 15px;
   text-decoration: none;
-  font-size: 14px;  /* reduced from 18px */
+  font-size: 14px;
 }
 
 nav a:hover {
@@ -61,24 +62,25 @@ nav a:hover {
 }
 
 section {
-  padding: 10px;  /* reduced from 20px */
+  padding: 10px;
 }
 
 .services li {
-  margin-bottom: 6px;  /* reduced from 10px */
+  margin-bottom: 6px;
   list-style: none;
-  font-size: 14px;  /* reduced from 18px */
+  font-size: 14px;
 }
 
 .one, .two, .three, .four, .five {
-  width: 50%;  /* was 300px */
-  height: auto; /* was 200px */
+  width: 50%;
+  height: auto;
   object-fit: cover;
   position: relative;
   animation: run 3s linear infinite;
-  border-radius: 8px;  /* slightly reduced */
-  margin: 8px 0;  /* reduced margin */
+  border-radius: 8px;
+  margin: 8px 0;
 }
+
 @keyframes run {
   0% {
     left: 40px;
@@ -91,7 +93,6 @@ section {
   }
 }
 
-
 .animated-photo:hover {
   transform: scale(1.1);
 }
@@ -100,7 +101,7 @@ footer {
   background-color: gray;
   color: black;
   text-align: center;
-  padding: 8px;  /* reduced from 10px */
+  padding: 8px;
 }
 
 .contact a {
@@ -110,5 +111,50 @@ footer {
 }
 
 p {
-  font-size: 14px;  /* reduced from 18px */
+  font-size: 14px;
+}
+
+/* Responsive for Mobile View */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .box {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  section {
+    padding: 8px;
+  }
+
+  .services li {
+    font-size: 12px;
+  }
+
+  .one, .two, .three, .four, .five {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  header img {
+    width: 100%;
+    max-width: 250px;
+  }
 }
