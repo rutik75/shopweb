@@ -81,19 +81,16 @@ section {
   margin: 8px 0;
 }
 
-keyframes run {
+@keyframes run {
   0% {
-    transform: translateX(0);
+    left: 0px;
   }
   50% {
-    transform: translateX(100px);
+    left: 150px;
   }
   100% {
-    transform: translateX(0);
+    left: 8px;
   }
-}
-.animated-photo:hover {
-  transform: scale(1.1);
 }
 
 footer {
